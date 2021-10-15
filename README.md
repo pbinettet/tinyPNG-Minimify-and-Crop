@@ -16,15 +16,15 @@ Work with .png .jpg and .jpeg files.
 
 Right-click on one or multiple file or folder (process all image inside folder and it's subfolder when a folder is selected)
 
-![compress and crop images](img/right-click.png)
+![compress and crop images](https://github.com/pbinettet/tinyPNG-Minimify-and-Crop/blob/main/img/right-click.png?raw=true)
 
 Minimize and crop image :
 
-![compress and crop images](img/crop-1.png)
+![compress and crop images](https://github.com/pbinettet/tinyPNG-Minimify-and-Crop/blob/main/img/crop-1.png?raw=true)
 
-![compress and crop images](img/crop-2.png)
+![compress and crop images](https://github.com/pbinettet/tinyPNG-Minimify-and-Crop/blob/main/img/crop-2.png?raw=true)
 
-![compress and crop images](img/crop-3.png)
+![compress and crop images](https://github.com/pbinettet/tinyPNG-Minimify-and-Crop/blob/main/img/crop-3.png?raw=true)
 
 
  ## Requirements
