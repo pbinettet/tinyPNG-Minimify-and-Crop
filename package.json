@@ -3,7 +3,7 @@
 	"displayName": "tinyPNG-Minimify-and-Crop",
 	"description": "Minimify and crop images with tinyPNG API (https://tinypng.com/)",
 	"version": "0.0.1",
-	"icon": "img/panda.png",
+	"icon": "https://github.com/pbinettet/tinyPNG-Minimify-and-Crop/blob/main/img/img/panda.png?raw=true",
 	"engines": {
 		"vscode": "^1.58.0"
 	},
