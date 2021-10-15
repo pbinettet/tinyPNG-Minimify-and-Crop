@@ -1,0 +1,88 @@
+{
+	"name": "tinypngminimifyandcrop",
+	"displayName": "tinyPNG-Minimify-and-Crop",
+	"description": "Minimify and crop images with tinyPNG API (https://tinypng.com/)",
+	"version": "0.0.1",
+	"icon": "img/panda.png",
+	"engines": {
+		"vscode": "^1.58.0"
+	},
+	"categories": [
+		"Other",
+		"Extension Packs"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"main": "./extension/extension.js",
+	"contributes": {
+		"menus": {
+			"explorer/context": [
+				{
+					"when": "resourceExtname == .jpeg || resourceExtname == .jpg || resourceExtname == .png",
+					"command": "tinypngminimifyandcrop.tiny-image",
+					"group": "7_modification@1"
+				},
+				{
+					"when": "resourceExtname == .jpeg || resourceExtname == .jpg || resourceExtname == .png",
+					"command": "tinypngminimifyandcrop.tiny-and-crop-image",
+					"group": "7_modification@2"
+				},
+				{
+					"when": "explorerResourceIsFolder",
+					"command": "tinypngminimifyandcrop.tiny-image",
+					"group": "7_modification@1"
+				},
+				{
+					"when": "explorerResourceIsFolder",
+					"command": "tinypngminimifyandcrop.tiny-and-crop-image",
+					"group": "7_modification@2"
+				}
+			]
+		},
+		"commands": [
+			{
+				"command": "tinypngminimifyandcrop.tiny-image",
+				"title": "TinyPNG | Minimize image"
+			},
+			{
+				"command": "tinypngminimifyandcrop.tiny-and-crop-image",
+				"title": "TinyPNG | Minimize and crop image"
+			}
+		],
+		"configuration": {
+			"title": "TinyPNG Crop Insert Images",
+			"properties": {
+				"tinypngminimifyandcrop.tinyPngApiKey": {
+					"type": "string",
+					"default": "YOUR_API_KEY_HERE",
+					"markdownDescription": "Enter your API key. To get one please visit the web site https://tinypng.com/developers"
+				},
+				"tinypngminimifyandcrop.tinyPngLimit": {
+					"type": "number",
+					"default": 500,
+					"markdownDescription": "Limit of maximum compression per month.\n\n **Charges may apply** if the number of compression per month exceeds 500. Please visit https://tinypng.com/developers#pricing for more info."
+				}
+			}
+		}
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"pretest": "npm run lint",
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.58.0",
+		"@types/glob": "^7.1.3",
+		"@types/mocha": "^8.2.2",
+		"@types/node": "14.x",
+		"eslint": "^7.27.0",
+		"glob": "^7.1.7",
+		"mocha": "^8.4.0",
+		"typescript": "^4.3.2",
+		"vscode-test": "^1.5.2"
+	},
+	"dependencies": {
+		"tinify": "^1.6.0-beta.2"
+	}
+}
