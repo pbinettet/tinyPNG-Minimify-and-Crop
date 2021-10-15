@@ -2,8 +2,6 @@
 
 Extension to compress and resize/crop images with tinyPNG API (https://tinypng.com/)
 
-https://marketplace.visualstudio.com/items?itemName=Pierrick.tinypngminimifyandcrop
-
 **What does TinyPNG do?**
 TinyPNG uses smart lossy compression techniques to reduce the file size of your WEBP, JPEG and PNG files. By selectively decreasing the number of colors in the image, fewer bytes are required to store the data. The effect is nearly invisible but it makes a very large difference in file size!
 
