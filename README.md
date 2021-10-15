@@ -1,6 +1,7 @@
 # tinypngminimifyandcrop README
 
 Extension to compress and resize/crop images with tinyPNG API (https://tinypng.com/)
+
 https://marketplace.visualstudio.com/items?itemName=Pierrick.tinypngminimifyandcrop
 
 **What does TinyPNG do?**
