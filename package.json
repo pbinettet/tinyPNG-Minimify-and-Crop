@@ -8,7 +8,7 @@
 		"url": "https://github.com/pbinettet/tinyPNG-Minimify-and-Crop"
 	},
 	"version": "0.0.1",
-	"icon": "https://github.com/pbinettet/tinyPNG-Minimify-and-Crop/blob/main/img/img/panda.png?raw=true",
+	"icon": "img/panda.png",
 	"engines": {
 		"vscode": "^1.58.0"
 	},
