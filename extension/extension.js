@@ -53,7 +53,6 @@ function activate(context) {
 		let msg = "Are you sure you want minimify all following image? Files will be automaticly overwritted. \n\n"
 		imgFilePathList.forEach(elem => {
 			allWorkspace.forEach((workspaceUri) => {
-				console.log(workspaceUri)
 				elem = elem.replace(workspaceUri, "")
 			})
 			msg += "• " + elem + "\n";
@@ -103,7 +102,6 @@ function activate(context) {
 		let msg = "Are you sure you want minimify and resize all following image? Files will be automaticly overwritted. \n\n"
 		imgFilePathList.forEach(elem => {
 			allWorkspace.forEach((workspaceUri) => {
-				console.log(workspaceUri)
 				elem = elem.replace(workspaceUri, "")
 			})
 			msg += "• " + elem + "\n";
@@ -146,18 +144,18 @@ function activate(context) {
 								if (widthInput === undefined || isNaN(widthNumber)) { return; }
 
 								// Tiny and crop image
-								tiny.minimifyAndCropAllListImg(imgFilePathList, { method: "cover", width: widthNumber })
+								tiny.minimifyAndCropAllListImg(imgFilePathList, { method: "scale", width: widthNumber })
 								break;
 
 							case "height":
 
 								// Ask height size
-								const heightInput = await vscode.window.showInputBox({ prompt: 'Height wanted in px', placeHolder: (parseInt(widthInput) * 9 / 16).toString() })
+								const heightInput = await vscode.window.showInputBox({ prompt: 'Height wanted in px', placeHolder: '675' })
 								let heightNumber = parseInt(heightInput)
 								if (heightInput === undefined || isNaN(heightNumber)) { return; }
 
 								// Tiny and crop image
-								tiny.minimifyAndCropAllListImg(imgFilePathList, { method: "cover", height: heightNumber })
+								tiny.minimifyAndCropAllListImg(imgFilePathList, { method: "scale", height: heightNumber })
 								break;
 							//.....
 							default:
