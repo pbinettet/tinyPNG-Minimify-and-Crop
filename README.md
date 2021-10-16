@@ -15,7 +15,7 @@ PNG is useful because it’s the only widely supported format that can store par
 
 >Require a tinyPNG API key. Visit https://tinypng.com/developers to get one for free.
 >
->![compress and crop images](https://github.com/pbinettet/tinyPNG-Minimify-and-Crop/blob/main/img/tinyPNG.png?raw=true)
+>![compress and crop images](https://github.com/pbinettet/tinyPNG-Minimify-and-Crop/blob/main/img/TinyPNG.png?raw=true)
 >
 >Enter your API key in extension setting's.
 >
