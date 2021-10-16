@@ -15,7 +15,7 @@ module.exports = {
             tinify.key = vscode.workspace.getConfiguration('tinypngminimifyandcrop').tinyPngApiKey;
             tinify.validate(function (err) {
                 if (err) {
-                    vscode.window.showErrorMessage("TinyPNG - Invalid activation key.\n\n\nPlease enter a valid activation key in the extension setting option.");
+                    vscode.window.showErrorMessage("TinyPNG - Invalid activation key. Please enter a valid activation key in the extension setting's.");
                     reject(err);
                 } else {
                     resolve()
