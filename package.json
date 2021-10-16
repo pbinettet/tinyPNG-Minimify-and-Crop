@@ -14,7 +14,7 @@
 		"png",
 		"jpg"
 	],
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"icon": "img/panda.png",
 	"engines": {
 		"vscode": "^1.58.0"
